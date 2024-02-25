@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.bookmarky.BookmarkyController">
+
+    <left>
+        <VBox spacing="10">
+            <!-- Content Display Area -->
+            <!-- You can dynamically load content into this area when a bookmark is clicked -->
+        </VBox>
+    </left>
+
+    <right>
+        <VBox spacing="10">
+            <!-- Buttons Area -->
+            <HBox>
+                <Button text="Search" onAction="#onSearchClick"/>
+                <Button text="Add Bookmark" onAction="#onAddBookmarkClick"/>
+                <Button text="View All" onAction="#onViewAllClick"/>
+            </HBox>
+            <Label fx:id="bookmarky"/>
+            <!-- TreeView to display all bookmarks -->
+            <TreeView fx:id="bookmarkTreeView" />
+        </VBox>
+    </right>
+
+</BorderPane>
